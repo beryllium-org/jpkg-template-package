@@ -1,5 +1,5 @@
 {
-    "JPKG_minimum_version": 0,
+    "JPKG_minimum_version": 2,
     "package_name": "package",
     "version": [0, 0, 0],
     "dependencies": [],
@@ -7,5 +7,6 @@
     "install": "installer.py",
     "remove": "uninstaller.py",
     "update": "updater.py",
+    "strap": "strap.py",
     "restart_required": false
 } 
