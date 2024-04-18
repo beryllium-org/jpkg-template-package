@@ -6,7 +6,7 @@
     "conflicts": [],
     "install": "installer.py",
     "remove": "uninstaller.py",
-    "update": "updater.py",
+    "update": "installer.py",
     "strap": "strap.py",
     "restart_required": false
-} 
+}
