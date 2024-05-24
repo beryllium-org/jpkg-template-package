@@ -18,4 +18,4 @@ rminst:
 	@if [ -e "files/strap.py" ]; then rm files/strap.py; fi
 	@if [ -e "file/uninstaller.py" ]; then rm files/uninstaller.py; fi
 geninst:
-	@python3 -u script/gen_install_scripts.py
+	@python3 -u scripts/gen_install_scripts.py
