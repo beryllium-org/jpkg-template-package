@@ -1,0 +1,2 @@
+folder /bin/testing
+file test.lja /bin/testing/test.lja
