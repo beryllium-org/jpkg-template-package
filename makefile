@@ -13,9 +13,10 @@ package: rminst modules geninst
 	@python3 -u scripts/generate_package.py
 clean: rminst
 	@if [ -e "package.jpk" ]; then rm package.jpk; fi
+	@if find "files" -maxdepth 1 -name '*.mpy' | grep -q .; then rm files/*.mpy; fi
+geninst:
+	@python3 -u scripts/gen_install_scripts.py
 rminst:
 	@if [ -e "files/installer.py" ]; then rm files/installer.py; fi
 	@if [ -e "files/strap.py" ]; then rm files/strap.py; fi
-	@if [ -e "file/uninstaller.py" ]; then rm files/uninstaller.py; fi
-geninst:
-	@python3 -u scripts/gen_install_scripts.py
+	@if [ -e "files/uninstaller.py" ]; then rm files/uninstaller.py; fi
