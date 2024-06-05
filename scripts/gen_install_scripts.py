@@ -32,7 +32,6 @@ def mk_scripts(data: list) -> None:
     uninst = autogen_msg
 
     files = []
-    targets = []
     rmfol = []
 
     sent_rml = False
